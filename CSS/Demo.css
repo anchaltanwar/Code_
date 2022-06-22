@@ -584,7 +584,8 @@ On Going Ends
 Up Coming Starts 
 -----------------------------------*/
 .Up-Coming{
-    padding: 8px;
+     place-items: center;
+       
 }
 .accordion{
   display: flex;
