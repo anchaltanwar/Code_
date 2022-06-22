@@ -582,7 +582,9 @@ On Going Ends
 /* --------------------------------
 Up Coming Starts 
 -----------------------------------*/
-
+.Up-Coming{
+    padding: 8px;
+}
 .accordion{
   display: flex;
   max-width: 1010px;
