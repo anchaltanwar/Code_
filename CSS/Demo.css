@@ -440,8 +440,9 @@ In Focus Begins
 On Going Starts 
 -----------------------------------*/
 .On-Going{
-    padding: 5pt;
     place-items: center;
+        width: 100%;
+    
 }
 .body::before{
     content: '';
