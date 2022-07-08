@@ -1,102 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/Form.css">
+    <title>Regisration Form</title>
+  </head>
 
-    <title>Regisration Form </title>
-</head>
-
-<body>
+  <body>
+      <header>Registration form</header>
     <div class="container">
-        <header>Registration</header>
 
-        <form action="#">
-            <div class="form first">
-                <div class="details personal">
-                    <span class="title">Personal Details</span>
+      <form action="#">
+        <div class="form first">
+          <div class="details-personal">
+            <!-- Personal Details flex box -->
+            <div>
+            <span class="title">Personal Details</span>
+            <div class="fields">
+              <div class="input-field">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name" required />
+              </div>
 
-                    <div class="fields">
-                        <div class="input-field">
-                            <label>Full Name</label>
-                            <input type="text" placeholder="Enter your name" required>
-                        </div>
+              <div class="input-field">
+                <label>UID</label>
+                <input type="text" placeholder="UID" required />
+              </div>
 
-                        <div class="input-field">
-                            <label>UID</label>
-                            <input type="text" placeholder="UID" required>
-                        </div>
+              <div class="input-field">
+                <label>Group & Section</label>
+                <input
+                  type="text"
+                  placeholder="Enter your Section(Group)"
+                  required
+                />
+              </div>
 
-                        <div class="input-field">
-                            <label>Group & Section</label>
-                            <input type="text" placeholder="Enter your Section(Group)" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>CU-mail ID</label>
-                            <input type="text" placeholder="Enter your CU-mail ID" required>
-                        </div>
-                        <div class="input-field">
-                            <label>E-mail ID</label>
-                            <input type="text" placeholder="Enter your E-mail ID" required>
-                        </div>
-                        <div class="input-field">
-                            <label>Mobile Number</label>
-                            <input type="number" placeholder="Enter mobile number" required>
-                        </div>
-                        <div class="input-field">
-                            <label>Gender</label>
-                            <select required>
-                                <option disabled selected>Select gender</option>
-                                <option>Male</option>
-                                <option>Female</option>
-                                <option>Others</option>
-                            </select>
-                        </div>
-                        <div class="input-field">
-                            <label>DOB</label>
-                            <input type="date" placeholder="Enter your Date of Birth" required>
-                        </div>
-                        <div class="input-field">
-                            <label>Event Name</label>
-                            <input type="text" placeholder="Enter the name of Event" required>
-                        </div>
-                        <div class="input-field">
-                            <label>Your Role</label>
-                            <select required>
-                                <option disabled selected>Select the role</option>
-                                <option>Organiser</option>
-                                <option>Participant</option>
-                                <option>Coordinator</option>
-                                <option>Volunteer</option>
-                                <option>Other</option>
-                            </select>
-                        </div>
-                        <div class="input-field">
-                            <label>Query Box</label>
-                            <input type="text" placeholder="Enter your queries here">
-                        </div>
-                        <div class="input-field">
-                            <label>Suggestion</label>
-                            <input type="text" placeholder="Enter your suggestions here">
-                        </div>
-                        <button class="nextBtn">
-                            <span class="btnText">Next</span>
-                            <i class="uil uil-navigator"></i>
-                        </button>
-                    </div>
-                </div>
-
-
+              <div class="input-field">
+                <label>CU-mail ID</label>
+                <input
+                  type="text"
+                  placeholder="Enter your CU-mail ID"
+                  required
+                />
+              </div>
+              <div class="input-field">
+                <label>E-mail ID</label>
+                <input
+                  type="text"
+                  placeholder="Enter your E-mail ID"
+                  required
+                />
+              </div>
+              <div class="input-field">
+                <label>Mobile Number</label>
+                <input
+                  placeholder="Enter mobile number"
+                  required
+                />
+              </div>
+              <div class="input-field">
+                <label>Gender</label>
+                <select required>
+                  <option disabled selected>Select gender</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Others</option>
+                </select>
+              </div>
+              <div class="input-field">
+                <label>DOB</label>
+                <input
+                  type="date"
+                  placeholder="Enter your Date of Birth"
+                  required
+                />
+              </div>
             </div>
-
-           
-        </form>
+</div>
+            <!-- Event Details flex box -->
+            <div>
+            <span class="title">Event Details</span>
+            <div class="fields">
+              <div class="input-field">
+                <label>Event Name</label>
+                <input
+                  type="text"
+                  placeholder="Enter the name of Event"
+                  required
+                />
+              </div>
+              <div class="input-field">
+                <label>Your Role</label>
+                <select required>
+                  <option disabled selected>Select the role</option>
+                  <option>Organiser</option>
+                  <option>Participant</option>
+                  <option>Coordinator</option>
+                  <option>Volunteer</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="input-field">
+                <label>Query Box</label>
+                <input type="text" placeholder="Enter your queries here" />
+              </div>
+              <div class="input-field">
+                <label>Suggestion</label>
+                <input type="text" placeholder="Enter your suggestions here" />
+              </div>
+            </div>
+            </div>
+              <button class="nextBtn">
+                <span class="btnText">Next</span>
+                <i class="uil uil-navigator"></i>
+              </button>
+          </div>
+        </div>
+      </form>
     </div>
-
-</body>
-
+  </body>
 </html>
